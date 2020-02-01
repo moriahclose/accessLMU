@@ -1,8 +1,30 @@
 <html>
 	<head>
-	</head>
+        <title>accessLMU</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
 
 	<body>
-		<iframe src="https://map.concept3d.com?id=777#!ct/11171,11639,11692,11691,11641,10548,43500,10963?ce/14505?mc/33.96959467846997,-118.41841220855714?lh/?z/17" width="90%" height="1000px" frameborder="0" scrolling="no" border="0" style="border:0px solid #fff; margin:0; padding:0;" title="Interactive Westchester Campus Map"><p>Your browser does not support iFrames.</p></iframe>
-	</body>
+        <nav class="navbar" style="background-color: #FFC914">
+            <a class="navbar-brand" style="width: 80%; margin: auto 10% auto 10%">accessLMU</a>
+        </nav>
+
+        <form class="col-4" style="display: inline-block; margin: 10% 5% auto 5%">
+            <div class="form-group">
+                <input type="email" class="form-control" id="startLocationInput" aria-describedby="emailHelp" placeholder="Start (ex: University Hall)">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="endLocationInput" placeholder="Destination (ex: Doolan)">
+            </div>
+            
+            <button type="submit" class="btn btn-primary m-3">Find Path</button>
+        </form>
+
+        <div style="display: inline-block; width: 50%; height: 50%; background-color: grey; margin-top: 5%"></div>
+
+        </div>
+
+    </body>
+    
+
 </html>
