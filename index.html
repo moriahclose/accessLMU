@@ -1,4 +1,28 @@
 <html>
+    <style>
+        .ttip {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .ttip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+    
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+    
+        .ttip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
 	<head>
         <title>accessLMU</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -32,9 +56,20 @@
         </form>
         </div>
 
-        <!-- <div style="display: inline-block;"> -->
-            <img style="width: 50%; height: 70%; position: absolute; left: 640px; top: 140px" src="./assets/mockmap.png"/>
-        <!-- </div> -->
+<div class="tooltip">
+    <img src="https://d1gntqhqj0rbcs.cloudfront.net/assets/777/star_marker_purple_80x80.png"
+        class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="map marker" tabindex="0"
+        width="35px">
+    <span class="tooltiptext">Tooltip text</span>
+</div>
+
+
+        <div style="display: inline-block;">
+            <img style="width: 50%; height: 70%; position: absolute; left: 640px; top: 140px;" src="./assets/mockmap.png"/>
+            <!-- Putting class="ttip" to the following div makes the star vanish -->
+            <img style="width=50px; height=50px; position: absolute; top:460px; left: 660px;" src="./assets/star_marker_purple.png" data-toggle="tooltip" data-placement="left" title="Building Name" />
+
+        </div>
 
         </div>
 
