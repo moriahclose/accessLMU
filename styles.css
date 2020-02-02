@@ -1,0 +1,19 @@
+#destinationLogo {
+    position: absolute;
+    top: 240px;
+    left: 150px;
+}
+
+#startDropdown {
+    position: absolute;
+    width: 350px;
+    top: 280px;
+    left: 250px;
+}
+
+#destinationDropdown {
+    position: absolute;
+    width: 350px;
+    top: 440px;
+    left: 250px;
+}
