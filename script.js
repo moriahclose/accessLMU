@@ -16,4 +16,7 @@ $(document).ready(() => {
         $('#startDropdown').hide()
         $('#destinationDropdown').hide()
     })
+    $('#searchBtn').on('click', event => {
+        event.
+    })
 })
