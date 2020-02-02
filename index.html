@@ -2,6 +2,7 @@
 	<head>
         <title>accessLMU</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="/styles.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
     </head>
@@ -11,30 +12,34 @@
             <a class="navbar-brand" style="width: 80%; margin: auto 10% auto 10%">accessLMU</a>
         </nav>
 
-        <div style="position: absolute; top: 240px; left: 150px;">
+        <div id="destinationLogo" style="position: absolute; top: 240px; left: 150px;">
             <img style="display: inline-block; width: 100px; height: 200px" src="./assets/destinationLogo.svg" />
         </div>
 
         <form>
-            <div class="form-group" style="position: absolute; top: 240px; left: 250px; width: 350px">
+            <div class="inputs form-group" style="position: absolute; top: 240px; left: 250px; width: 350px">
                 <input type="text" class="form-control" id="startLocationInput" aria-describedby="emailHelp" placeholder="Start (ex: University Hall)">
             </div>
-            <div id="startDropdown" style="display: none" aria-labelledby="dropdownMenuOffset">
-                <a class="dropdown-item" href="#">St. Roberts</a>
+            <div class="dropdown rounded" id="startDropdown" aria-labelledby="dropdownMenuOffset">
+                <a class="dropdown-item light" href="#">St. Roberts</a>
                 <a class="dropdown-item" href="#">University Hall</a>
                 <a class="dropdown-item" href="#">Doolan</a>
             </div>
+
             <div class="form-group" style="position: absolute; top: 400px; left: 250px; width: 350px">
                 <input type="text" class="form-control" id="endLocationInput" placeholder="Destination (ex: Doolan)">
+            </div>
+            <div class="dropdown rounded" id="destinationDropdown" aria-labelledby="dropdownMenuOffset">
+                <a class="dropdown-item light" href="#">St. Roberts</a>
+                <a class="dropdown-item" href="#">University Hall</a>
+                <a class="dropdown-item" href="#">Doolan</a>
             </div>
             
             <button type="submit" class="btn" style="position: absolute; top: 500px; left: 360px; background-color: #17BEBB; color: white">Find Path</button>
         </form>
         </div>
 
-        <!-- <div style="display: inline-block;"> -->
-            <img style="width: 50%; height: 70%; position: absolute; left: 640px; top: 140px" src="./assets/mockmap.png"/>
-        <!-- </div> -->
+        <img style="width: 50%; height: 70%; position: absolute; left: 640px; top: 140px" src="./assets/mockmap.png"/>
 
         </div>
 
