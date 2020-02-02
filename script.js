@@ -18,11 +18,11 @@ $(document).ready(() => {
 
     $('#searchBtn').on('click', () => {
         if ( $('#startLocationInput').val() === "St. Roberts" && $('#endLocationInput').val() === "Sacred Heart Chapel") {
-            $('#mapImage').attr('src', './assets/mockmap.png')
-        } else if ( $('#startLocationInput').val() === "Hannon Library" && $('#endLocationInput').val() === "Leavys") {
-            $('#mapImage').attr('src', './assets/mockmap.png')
-        } else if ( $('#startLocationInput').val() === "Foley Annex" && $('#endLocationInput').val() === "Burns") {
-            $('#mapImage').attr('src', './assets/mockmap.png')
+            $('#mapImage').attr('src', './assets/St.Robs to Sacred Heart2.png')
+        } else if ( $('#startLocationInput').val() === "Hannon Library" && $('#endLocationInput').val() === "University Hall") {
+            $('#mapImage').attr('src', './assets/Library to Uhall.png')
+        } else if ( $('#startLocationInput').val() === "Doolan" && $('#endLocationInput').val() === "St. Roberts") {
+            $('#mapImage').attr('src', './assets/Doolan to St.Robs.png')
         } else {
             $('#mapImage').attr('src', '')
         }
