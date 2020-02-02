@@ -17,7 +17,6 @@ $(document).ready(() => {
     }
 
     $('#searchBtn').on('click', () => {
-        console.log($('#startLocationInput').val())
         if ( $('#startLocationInput').val() === "St. Roberts" && $('#endLocationInput').val() === "Sacred Heart Chapel") {
             $('#mapImage').attr('src', './assets/mockmap.png')
         } else if ( $('#startLocationInput').val() === "Hannon Library" && $('#endLocationInput').val() === "Leavys") {
