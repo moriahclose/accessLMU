@@ -22,11 +22,18 @@ $(document).ready(() => {
         $('#endLocationInput').val($(event.target).text())
     })
 
+    function makeWhiteBarVisible() {
+        var x = document.getElementById("whitebar");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
     $(window).click( () => {
         $('#startDropdown').hide()
         $('#destinationDropdown').hide()
     })
-    $('#searchBtn').on('click', event => {
-        event.
-    })
+
 })
