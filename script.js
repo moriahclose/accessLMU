@@ -12,22 +12,20 @@ $(document).ready(() => {
         $('#destinationDropdown').css('display', 'block')
     })
 
-    $('.start').on('click', event => {
-        console.log($(event.target).text())
-        $('#startLocationInput').val($(event.target).text())
-    })
-
-    $('.end').on('click', event => {
-        console.log($(event.target).text())
-        $('#endLocationInput').val($(event.target).text())
-    })
+    if ( $('#startLocationInput').text() === "St. Roberts" && $('#endLocationInput').text() === "Sacred Heart Chapel") {
+        $('#mapImage').src('./assets/mockmap.png')
+    }
 
     $('#searchBtn').on('click', () => {
-        var x = document.getElementById("whitebar");
-        if (x.style.display === "none") {
-            x.style.display = "block";
+        console.log($('#startLocationInput').val())
+        if ( $('#startLocationInput').val() === "St. Roberts" && $('#endLocationInput').val() === "Sacred Heart Chapel") {
+            $('#mapImage').attr('src', './assets/mockmap.png')
+        } else if ( $('#startLocationInput').val() === "Hannon Library" && $('#endLocationInput').val() === "Leavys") {
+            $('#mapImage').attr('src', './assets/mockmap.png')
+        } else if ( $('#startLocationInput').val() === "Foley Annex" && $('#endLocationInput').val() === "Burns") {
+            $('#mapImage').attr('src', './assets/mockmap.png')
         } else {
-            x.style.display = "none";
+            $('#mapImage').attr('src', '')
         }
     })
 
